@@ -1,0 +1,22 @@
+.link {
+    border-radius: 8px;
+    width: 152px;
+    height: 56px;
+    background-color: $white;
+    color: $dark_grey;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 56px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    transition: 40ms ease all;
+
+    &:active {
+        background-color: $light_peach;
+        color: $white;
+        transition: 40ms ease all;
+    }
+}

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="876" height="292" fill="none">
+    <g clip-path="url(#a)">
+        <circle cx="730" cy="292" r="146" fill="url(#b)" opacity=".309" transform="rotate(-90 730 292)" />
+        <circle cx="438" cy="292" r="146" fill="url(#c)" opacity=".309" />
+        <circle cx="146" cy="292" r="146" fill="url(#d)" opacity=".309" transform="rotate(90 146 292)" />
+    </g>
+    <g clip-path="url(#e)">
+        <circle cx="730" r="146" fill="url(#f)" opacity=".309" transform="rotate(-90 730 0)" />
+        <circle cx="438" r="146" fill="url(#g)" opacity=".309" />
+    </g>
+    <defs>
+        <linearGradient id="b" x1="584" x2="876" y1="438" y2="438" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#5D0202" stop-opacity=".01" />
+            <stop offset="1" stop-color="#5D0202" stop-opacity=".498" />
+        </linearGradient>
+        <linearGradient id="c" x1="292" x2="584" y1="438" y2="438" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#5D0202" stop-opacity=".01" />
+            <stop offset="1" stop-color="#5D0202" stop-opacity=".498" />
+        </linearGradient>
+        <linearGradient id="d" x1="0" x2="292" y1="438" y2="438" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#5D0202" stop-opacity=".01" />
+            <stop offset="1" stop-color="#5D0202" stop-opacity=".498" />
+        </linearGradient>
+        <linearGradient id="f" x1="584" x2="876" y1="146" y2="146" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#5D0202" stop-opacity=".01" />
+            <stop offset="1" stop-color="#5D0202" stop-opacity=".498" />
+        </linearGradient>
+        <linearGradient id="g" x1="292" x2="584" y1="146" y2="146" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#5D0202" stop-opacity=".01" />
+            <stop offset="1" stop-color="#5D0202" stop-opacity=".498" />
+        </linearGradient>
+        <clipPath id="a">
+            <path fill="#fff" d="M876 146H0v292h876z" />
+        </clipPath>
+        <clipPath id="e">
+            <path fill="#fff" d="M876-146H292v292h584z" />
+        </clipPath>
+    </defs>
+</svg>

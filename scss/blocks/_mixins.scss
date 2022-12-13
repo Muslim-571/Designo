@@ -1,0 +1,42 @@
+@mixin tripleBox($width, $max-width, $height, $color, $background-color) {
+    width: $width;
+    max-width: $max-width;
+    height: $height;
+    color: $color;
+    background-color: $background-color;
+}
+
+@mixin df-row-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin df-row-between-end {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+} 
+
+@mixin df-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin df-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin df-column-starts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}

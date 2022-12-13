@@ -1,0 +1,347 @@
+.footer {
+    background-color: $black;
+
+    &__top {
+        margin-top: 144px;
+        @include df-row-between;
+    }
+
+    &__logo-image {
+        vertical-align: middle;
+        transition: 40ms ease all;
+
+        &:active {
+            transition: 40ms ease all;
+            opacity: 0.4;
+        }
+    }
+
+    &__list {
+        @include df-row-center;
+        gap: 42px;
+    }
+
+    &__metis {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 2px;
+        color: $white;
+        transition: transform 0.3s;
+
+        &::before {
+            transform-origin: 100% 50%;
+            transform: scale3d(0, 1, 1);
+            transition: transform 0.3s;
+        }
+    }
+
+    &__metis:hover::before {
+        transform-origin: 0% 50%;
+        transform: scale3d(1, 1, 1);
+    }
+
+    .links {
+        cursor: pointer;
+        font-size: 14px;
+        position: relative;
+        white-space: nowrap;
+        color: $white;
+    }
+
+    .links::before,
+    .links::after {
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background: currentColor;
+        top: 100%;
+        left: 0;
+        pointer-events: none;
+    }
+
+    .links::before {
+        content: '';
+    }
+
+    &__hr {
+        margin: 40px 0 31px;
+        width: 100%;
+        max-width: 1086px;
+        height: 1px;
+        background-color: $white;
+        mix-blend-mode: normal;
+        opacity: 0.1;
+    }
+
+    &__bottom {
+        @include df-row-between-end;
+        margin-bottom: 72px;
+    }
+
+    &__mini-box {
+        @include df-row-center;
+        gap: 200px;
+    }
+
+    &__ol {
+        @include df-column-starts;
+    }
+
+    &__bottom-links {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 26px;
+        color: $white;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+        transition: 40ms ease all;
+
+        &:active {
+            transition: 40ms ease all;
+            color: $peach
+        }
+    }
+
+    &__bottom-svgs {
+        @include df-row-center;
+        gap: 16px;
+    }
+
+    &__svg-link {
+        color: $peach;
+        transition: 40ms ease all;
+
+        &:active {
+            transition: 40ms ease all;
+            color: $light_peach;
+        }
+    }
+
+    .icon {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media(max-width:930px) {
+    .footer {
+        background-color: $black;
+
+        &_container {
+            width: 100%;
+            max-width: 930px;
+        }
+
+        &__top {
+            margin-top: 166px;
+            @include df-row-between;
+        }
+
+        &__logo-image {
+            vertical-align: middle;
+            transition: 40ms ease all;
+
+            &:active {
+                transition: 40ms ease all;
+                opacity: 0.4;
+            }
+        }
+
+        &__list {
+            @include df-row-center;
+            gap: 42px;
+        }
+
+        &__metis {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 14px;
+            letter-spacing: 2px;
+            color: $white;
+            transition: transform 0.3s;
+
+            &:active {
+                text-decoration: underline;
+            }
+        }
+
+        &__hr {
+            margin: 40px 0 31px;
+            width: 100%;
+            max-width: 1086px;
+            height: 1px;
+            background-color: $white;
+            mix-blend-mode: normal;
+            opacity: 0.1;
+        }
+
+        &__bottom {
+            @include df-row-between-end;
+            margin-bottom: 72px;
+        }
+
+        &__mini-box {
+            @include df-row-center;
+            gap: 50px;
+        }
+
+        &__ol {
+            @include df-column-starts;
+        }
+
+        &__bottom-links {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 26px;
+            color: $white;
+            mix-blend-mode: normal;
+            opacity: 0.5;
+
+            &:active {
+                transition: 40ms ease all;
+                color: $peach
+            }
+        }
+
+        &__bottom-svgs {
+            @include df-row-center;
+            gap: 16px;
+        }
+    
+        &__svg-link {
+            color: $peach;
+            transition: 40ms ease all;
+    
+            &:active {
+                transition: 40ms ease all;
+                color: $light_peach;
+            }
+        }
+    
+        .icon {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+@media(max-width:750px) {
+    .footer {
+        background-color: $black;
+
+        &_container {
+            width: 100%;
+            max-width: 930px;
+            @include df-column-center;
+        }
+
+        &__top {
+            margin-top: 253px;
+            @include df-column-center;
+            gap: 65px;
+            margin-bottom: 40px;
+        }
+
+        &__logo-image {
+            vertical-align: middle;
+            transition: 40ms ease all;
+
+            &:active {
+                transition: 40ms ease all;
+                opacity: 0.4;
+            }
+        }
+
+        &__list {
+            @include df-column-center;
+            gap: 32px;
+        }
+
+        &__metis {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 14px;
+            letter-spacing: 2px;
+            color: $white;
+            transition: transform 0.3s;
+
+            &:active {
+                text-decoration: underline;
+            }
+        }
+
+        &__hr {
+            transform: translateY(-205px);
+            margin: 0 auto;
+            width: 100%;
+            max-width: 1086px;
+            height: 1px;
+            background-color: $white;
+            mix-blend-mode: normal;
+            opacity: 0.1;
+        }
+
+        &__bottom {
+            @include df-column-center;
+            margin-bottom: 64px;
+        }
+
+        &__mini-box {
+            @include df-column-center;
+            gap: 40px;
+        }
+
+        &__ol {
+            @include df-column-center;
+            margin-bottom: 42px;
+        }
+
+        &__bottom-links {
+            text-align: center;
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 26px;
+            color: $white;
+            mix-blend-mode: normal;
+            opacity: 0.5;
+
+            &:active {
+                transition: 40ms ease all;
+                color: $peach
+            }
+        }
+
+        &__bottom-svgs {
+            @include df-row-center;
+            gap: 16px;
+        }
+    
+        &__svg-link {
+            color: $peach;
+            transition: 40ms ease all;
+    
+            &:active {
+                transition: 40ms ease all;
+                color: $light_peach;
+            }
+        }
+    
+        .icon {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}

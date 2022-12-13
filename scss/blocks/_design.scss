@@ -1,0 +1,231 @@
+.design {
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-bottom: 160px;
+
+    &__container {
+        @include df-row-center;
+        gap: 30px;
+    }
+
+    &__left-box {
+        border-radius: 15px;
+        width: 100%;
+        max-width: 541px;
+        min-height: 640px;
+        @include df-column-center;
+        background-image: url('../images/web__design.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__title {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: 2px;
+        color: $white;
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: $white;
+    }
+
+    &__right-box {
+        @include df-column-center;
+        gap: 24px;
+        width: 100%;
+        max-width: 541px;
+        min-height: 640px;
+    }
+
+    &__first-box {
+        border-radius: 15px;
+        width: 100%;
+        max-width: 541px;
+        min-height: 308px;
+        @include df-column-center;
+        background-image: url('../images/app__design.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__second-box {
+        border-radius: 15px;
+        width: 100%;
+        max-width: 541px;
+        min-height: 308px;
+        @include df-column-center;
+        background-image: url('../images/graphic__design.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media (max-width:930px) {
+    .design {
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 120px;
+
+        &__container {
+            width: 100%;
+            max-width: 930px;
+            @include df-column-center;
+            gap: 24px;
+        }
+
+        &__left-box {
+            border-radius: 15px;
+            width: 100%;
+            max-width: 689px;
+            min-height: 200px;
+            @include df-column-center;
+            background-image: url('../images/web__design.png');
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            background-size: cover;
+        }
+
+        &__title {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 48px;
+            letter-spacing: 2px;
+            color: $white;
+            margin-bottom: 34px;
+        }
+
+        &__text {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 22px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            color: $white;
+        }
+
+        &__right-box {
+            @include df-column-center;
+            gap: 24px;
+            width: 100%;
+            max-width: 689px;
+            min-height: 425px;
+        }
+
+        &__first-box {
+            border-radius: 15px;
+            width: 100%;
+            max-width: 689px;
+            min-height: 200px;
+            @include df-column-center;
+            background-image: url('../images/app__design.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        &__second-box {
+            border-radius: 15px;
+            width: 100%;
+            max-width: 689px;
+            min-height: 200px;
+            @include df-column-center;
+            background-image: url('../images/graphic__design.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}
+
+@media (max-width:500px) {
+    .design {
+        padding-right: 24px;
+        padding-left: 24px;
+        margin-bottom: 120px;
+
+        &__container {
+            width: 100%;
+            max-width: 500px;
+            @include df-column-center;
+            gap: 24px;
+        }
+
+        &__left-box {
+            border-radius: 15px;
+            width: 327px;
+            min-height: 250px;
+            @include df-column-center;
+            background-image: url('../images/web__design.png');
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            background-size: cover;
+        }
+
+        &__title {
+            text-align: center;
+            max-width: 100%;
+            max-width: 253px;
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 36px;
+            letter-spacing: 2px;
+            color: $white;
+            margin-bottom: 20px;
+        }
+
+        &__text {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 22px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            color: $white;
+        }
+
+        &__right-box {
+            @include df-column-center;
+            gap: 24px;
+            width: 100%;
+            max-width: 327px;
+            min-height: 524px;
+        }
+
+        &__first-box {
+            border-radius: 15px;
+            width: 327px;
+            min-height: 250px;
+            @include df-column-center;
+            background-image: url('../images/app__design.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        &__second-box {
+            border-radius: 15px;
+            width: 327px;
+            min-height: 250px;
+            @include df-column-center;
+            background-image: url('../images/graphic__design.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}

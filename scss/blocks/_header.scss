@@ -1,0 +1,273 @@
+.header {
+    &__container {
+        @include df-row-between;
+    }
+
+    &__logo-image {
+        vertical-align: middle;
+        transition: 40ms ease all;
+
+        &:active {
+            transition: 40ms ease all;
+            opacity: 0.4;
+        }
+    }
+
+    &__burger-menu {
+        background: none;
+        border: none;
+        display: none;
+    }
+
+    &__list {
+        @include df-row-center;
+        gap: 42px;
+        padding: 64px 0;
+    }
+
+    &__metis {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 2px;
+        color: $dark_grey;
+        transition: transform 0.3s;
+
+        &::before {
+            transform-origin: 100% 50%;
+            transform: scale3d(0, 1, 1);
+            transition: transform 0.3s;
+        }
+    }
+
+    &__metis:hover::before {
+        transform-origin: 0% 50%;
+        transform: scale3d(1, 1, 1);
+    }
+
+    .links {
+        cursor: pointer;
+        font-size: 14px;
+        position: relative;
+        white-space: nowrap;
+        color: $dark_grey;
+    }
+
+    .links::before,
+    .links::after {
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background: currentColor;
+        top: 100%;
+        left: 0;
+        pointer-events: none;
+    }
+
+    .links::before {
+        content: '';
+    }
+}
+
+@media (max-width:930px) {
+    .header {
+        &__container {
+            width: 100%;
+            max-width: 930px;
+            padding: 0 39px;
+            @include df-row-between;
+        }
+
+        &__logo-image {
+            vertical-align: middle;
+            transition: 40ms ease all;
+
+            &:active {
+                transition: 40ms ease all;
+                opacity: 0.4;
+            }
+        }
+
+        &__burger-menu {
+            background: none;
+            border: none;
+            display: none;
+        }
+
+        &__list {
+            @include df-row-center;
+            gap: 42px;
+            padding: 64px 0;
+        }
+
+        &__metis {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 14px;
+            letter-spacing: 2px;
+            color: $dark_grey;
+            transition: transform 0.3s;
+
+            &::before {
+                transform-origin: 100% 50%;
+                transform: scale3d(0, 1, 1);
+                transition: transform 0.3s;
+            }
+        }
+
+        &__metis:hover::before {
+            transform-origin: 0% 50%;
+            transform: scale3d(1, 1, 1);
+        }
+
+        .links {
+            cursor: pointer;
+            font-size: 14px;
+            position: relative;
+            white-space: nowrap;
+            color: $dark_grey;
+        }
+
+        .links::before,
+        .links::after {
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background: currentColor;
+            top: 100%;
+            left: 0;
+            pointer-events: none;
+        }
+
+        .links::before {
+            content: '';
+        }
+    }
+}
+
+@media (max-width:700px) {
+    .header {
+        position: relative;
+        z-index: 1001;
+        top: 0;
+        width: 100%;
+        position: fixed;
+        background-color: $white;
+
+        &__container {
+            width: 100%;
+            max-width: 700px;
+            padding: 35px 24px;
+            @include df-row-between;
+        }
+
+        &__logo-image {
+            vertical-align: middle;
+            transition: 40ms ease all;
+
+            &:active {
+                transition: 40ms ease all;
+                opacity: 0.4;
+            }
+        }
+
+        &__burger-menu {
+            background: none;
+            border: none;
+            outline: none;
+            display: block;
+        }
+
+        &__on {
+            display: block;
+        }
+
+        &__off {
+            display: none;
+        }
+
+        &__nav-bar {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            width: 100%;
+            height: calc(100vh - 95px);
+            display: none;
+            z-index: 1;
+        }
+
+        &__list {
+            top: 100%;
+            left: 0;
+            background-color: $black;
+            @include df-column-starts;
+            padding: 48px 24px;
+            z-index: 2;
+            gap: 32px;
+        }
+
+        &__metis {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 25px;
+            letter-spacing: 2px;
+            color: $white;
+            transition: transform 0.3s;
+
+            &:active {
+                text-decoration: underline;
+            }
+        }
+
+        &__metis:hover::before {
+            transform-origin: 0% 50%;
+            transform: scale3d(1, 1, 1);
+        }
+
+        .links {
+            cursor: pointer;
+            font-size: 24px;
+            line-height: 25px;
+            position: relative;
+            white-space: nowrap;
+            color: $white;
+        }
+
+        .links::before,
+        .links::after {
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background: currentColor;
+            top: 100%;
+            left: 0;
+            pointer-events: none;
+        }
+
+        .links::before {
+            content: '';
+        }
+    }
+
+    .header--open .header {
+        &__on {
+            display: none;
+        }
+
+        &__off {
+            display: block;
+        }
+
+        &__nav-bar {
+            display: block;
+        }
+
+    }
+}
